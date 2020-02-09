@@ -38,7 +38,6 @@ needs_sphinx = '2.0'
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.viewcode',
-    'sphinx.ext.napoleon',
     'sphinx.ext.imgconverter',
     'sphinx.ext.mathjax',
     'sphinxemoji.sphinxemoji',

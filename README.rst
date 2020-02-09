@@ -2,24 +2,24 @@
 grpc-web-proto-compile
 ===============================
 
-.. image:: https://travis-ci.com/romnnn/grpc_web_proto_compile.svg?branch=master
+.. image:: https://travis-ci.com/romnnn/grpc-web-proto-compile.svg?branch=master
         :target: https://travis-ci.com/romnnn/grpc_web_proto_compile
         :alt: Build Status
 
-.. image:: https://img.shields.io/pypi/v/grpc_web_proto_compile.svg
-        :target: https://pypi.python.org/pypi/grpc_web_proto_compile
+.. image:: https://img.shields.io/pypi/v/grpc-web-proto-compile.svg
+        :target: https://pypi.python.org/pypi/grpc-web-proto-compile
         :alt: PyPI version
 
-.. image:: https://img.shields.io/github/license/romnnn/grpc_web_proto_compile
-        :target: https://github.com/romnnn/grpc_web_proto_compile
+.. image:: https://img.shields.io/github/license/romnnn/grpc-web-proto-compile
+        :target: https://github.com/romnnn/grpc-web-proto-compile
         :alt: License
 
 .. image:: https://readthedocs.org/projects/grpc-web-proto-compile/badge/?version=latest
         :target: https://grpc-web-proto-compile.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
-.. image:: https://codecov.io/gh/romnnn/grpc_web_proto_compile/branch/master/graph/badge.svg
-        :target: https://codecov.io/gh/romnnn/grpc_web_proto_compile
+.. image:: https://codecov.io/gh/romnnn/grpc-web-proto-compile/branch/master/graph/badge.svg
+        :target: https://codecov.io/gh/romnnn/grpc-web-proto-compile
         :alt: Test Coverage
 
 """"""""

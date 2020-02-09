@@ -1,14 +1,8 @@
-==================
-Code documentation
-==================
+====================
+Compilation options
+====================
 
 autofunction
 ------------
 
-.. autofunction:: grpc_web_proto_compile.cli.main
-
-autoclass
----------
-
-.. autoclass:: sphinx.environment.collectors.EnvironmentCollector
-   :members:
+.. autofunction:: grpc_web_proto_compile.grpc_web_proto_compile.proto_compile
