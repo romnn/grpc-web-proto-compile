@@ -48,10 +48,6 @@ See the `official documentation`_ for more information.
 
 .. _official documentation: https://grpc-web-proto-compile.readthedocs.io
 
-.. code-block:: python
-
-    import grpc_web_proto_compile
-
 Development
 -----------
 
