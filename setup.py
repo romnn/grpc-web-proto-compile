@@ -92,7 +92,7 @@ setup(
     name="grpc_web_proto_compile",
     packages=find_packages(include=["grpc_web_proto_compile"]),
     test_suite="tests",
-    url="https://github.com/romnnn/grpc_web_proto_compile",
+    url="https://github.com/romnnn/grpc-web-proto-compile",
     version=version,
     zip_safe=False,
 )
