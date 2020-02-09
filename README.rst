@@ -24,11 +24,25 @@ grpc-web-proto-compile
 
 """"""""
 
-Your short description here. `romnnn.github.io/grpc_web_proto_compile <https://romnnn.github.io/grpc_web_proto_compile>`_
+This is a small script tailored to be used in CI environments and piplines to completely take care of generating typescript grpc stubs from protobuf files.
 
 .. code-block:: console
 
     $ pip install grpc_web_proto_compile
+
+To compile a directory with your proto files, simply run:
+
+.. code-block:: console
+
+    $ grpc_web_proto_compile path/to/your/proto/sources ./out
+
+If you cloned the repository, the command looks like:
+
+.. code-block:: console
+    
+    $ git clone https://github.com/romnnn/grpc-web-proto-compile
+    $ cd grpc-web-proto-compile/
+    $ python -m grpc_web_proto_compile.cli ./tests/sample/ ./out
 
 See the `official documentation`_ for more information.
 

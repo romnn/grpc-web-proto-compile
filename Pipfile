@@ -30,6 +30,7 @@ invoke = "*"
 m2r = "*"
 twine = "*"
 bump2version = "*"
+pylint = "*"
 
 [packages]
-grpc_web_proto_compile = {path = ".", editable = true}
+grpc_web_proto_compile = {path = ".",editable = true}
