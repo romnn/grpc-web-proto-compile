@@ -2,16 +2,16 @@
 
 """Main module."""
 
-import glob
 import os
+import pathlib
 import platform
 import shutil
 import subprocess
 import tempfile
 import typing
 
-protoc_version = "3.11.2"
-grpc_web_plugin_version = "1.0.7"
+protoc_version = "3.12.4"
+grpc_web_plugin_version = "1.2.0"
 protoc_release_base_url = (
     "https://github.com/protocolbuffers/protobuf/releases/download"
 )
@@ -38,6 +38,7 @@ def quote(s: str) -> str:
 def proto_compile(
     proto_source_dir: str,
     output_dir: str,
+    base_proto_parent_dir: typing.Optional[str] = None,
     js_out_options: typing.Optional[str] = None,
     grpc_web_out_options: typing.Optional[str] = None,
     clear_output_dir: bool = False,
@@ -45,11 +46,15 @@ def proto_compile(
 ) -> None:
     abs_source = os.path.abspath(proto_source_dir)
     abs_output = os.path.abspath(output_dir)
-    proto_files = glob.glob(abs_source + "/*.proto")
+
+    proto_files = list([str(p) for p in pathlib.Path(abs_source).rglob("*.proto")])
     if not len(proto_files) > 0:
         raise AssertionError(
             "Source directory " + abs_source + " must contain .proto file(s)"
         )
+
+    if base_proto_parent_dir is None:
+        base_proto_parent_dir = os.path.dirname(os.path.commonpath(proto_files))
 
     tmp_dir = tempfile.mkdtemp()
     try:
@@ -155,7 +160,7 @@ def proto_compile(
         # See: https://github.com/grpc/grpc-web
         proto_command = [
             tmp_dir + "/protoc/bin/protoc",
-            "-I=" + abs_source,
+            "-I=" + base_proto_parent_dir,
         ] + proto_files
         proto_command.append(
             "--plugin=protoc-gen-grpc-web=" + tmp_dir + "/protoc_gen_grpc_web"
