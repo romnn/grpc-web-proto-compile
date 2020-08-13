@@ -10,8 +10,9 @@ import subprocess
 import tempfile
 import typing
 
-protoc_version = "3.12.4"
-grpc_web_plugin_version = "1.2.0"
+DEFAULT_PROTOC_VERSION = "3.12.4"
+DEFAULT_GRPC_WEB_PLUGIN_VERSION = "1.2.0"
+
 protoc_release_base_url = (
     "https://github.com/protocolbuffers/protobuf/releases/download"
 )
@@ -43,6 +44,8 @@ def proto_compile(
     grpc_web_out_options: typing.Optional[str] = None,
     clear_output_dir: bool = False,
     verbosity: int = 0,
+    protoc_version: str = DEFAULT_PROTOC_VERSION,
+    grpc_web_plugin_version: str = DEFAULT_GRPC_WEB_PLUGIN_VERSION,
 ) -> None:
     abs_source = os.path.abspath(proto_source_dir)
     abs_output = os.path.abspath(output_dir)

@@ -6,7 +6,7 @@ import sys
 
 import click
 
-import grpc_web_proto_compile.grpc_web_proto_compile
+import grpc_web_proto_compile.grpc_web_proto_compile as grpcwebc
 
 
 def assert_valid_dir(
@@ -65,6 +65,17 @@ base_proto_parent_dir_help = (
     default=0,
     help=str("level of verbosity when printing to stdout (the higher the more output)"),
 )
+@click.option(
+    "--protoc_version",
+    default=grpcwebc.DEFAULT_PROTOC_VERSION,
+    help="protoc version to use (default is %s)" % grpcwebc.DEFAULT_PROTOC_VERSION,
+)
+@click.option(
+    "--grpc_web_plugin_version",
+    default=grpcwebc.DEFAULT_GRPC_WEB_PLUGIN_VERSION,
+    help="grpc web plugin version to use (default is %s)"
+    % grpcwebc.DEFAULT_GRPC_WEB_PLUGIN_VERSION,
+)
 def main(
     proto_source_dir: str,
     output_dir: str,
@@ -73,10 +84,12 @@ def main(
     grpc_web_out_options: str,
     clear_output_dir: bool,
     verbosity: int,
+    protoc_version: str,
+    grpc_web_plugin_version: str,
 ) -> int:
     """Console script for grpc_web_proto_compile."""
     try:
-        grpc_web_proto_compile.grpc_web_proto_compile.proto_compile(
+        grpcwebc.proto_compile(
             proto_source_dir=proto_source_dir,
             output_dir=output_dir,
             base_proto_parent_dir=None
@@ -86,6 +99,8 @@ def main(
             grpc_web_out_options=grpc_web_out_options,
             clear_output_dir=clear_output_dir,
             verbosity=verbosity,
+            protoc_version=protoc_version,
+            grpc_web_plugin_version=grpc_web_plugin_version,
         )
     except Exception as e:  # pragma: no cover
         raise click.ClickException(str(e))

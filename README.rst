@@ -35,6 +35,7 @@ To compile a directory with your proto files, simply run:
 .. code-block:: console
 
     $ grpc_web_proto_compile path/to/your/proto/sources ./out
+    $ grpc_web_proto_compile --help # For a list of available options
 
 If you cloned the repository, the command looks like:
 
