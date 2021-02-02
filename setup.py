@@ -34,7 +34,7 @@ test_requirements = [
     "pyfakefs",
 ]
 coverage_requirements = ["coverage", "codecov"]
-docs_requirements = ["sphinx>=2.0", "romnnn_sphinx_press_theme", "sphinxemoji"]
+docs_requirements = ["sphinx>=2.0", "romnn_sphinx_press_theme", "sphinxemoji"]
 formatting_requirements = ["flake8", "black==19.10b0", "isort"]
 tool_requirements = [
     "m2r",
@@ -55,7 +55,7 @@ dev_requirements = (
 )
 
 setup(
-    author="romnnn",
+    author="romnn",
     author_email="contact@romnn.com",
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
@@ -92,7 +92,7 @@ setup(
     name="grpc_web_proto_compile",
     packages=find_packages(include=["grpc_web_proto_compile"]),
     test_suite="tests",
-    url="https://github.com/romnnn/grpc-web-proto-compile",
+    url="https://github.com/romnn/grpc-web-proto-compile",
     version=version,
     zip_safe=False,
 )

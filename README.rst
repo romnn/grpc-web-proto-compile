@@ -2,24 +2,20 @@
 grpc-web-proto-compile
 ===============================
 
-.. image:: https://travis-ci.com/romnnn/grpc-web-proto-compile.svg?branch=master
-        :target: https://travis-ci.com/romnnn/grpc_web_proto_compile
+.. image:: https://github.com/romnn/grpc-web-proto-compile/workflows/test/badge.svg
+        :target: https://github.com/romnn/grpc-web-proto-compile/actions
         :alt: Build Status
 
 .. image:: https://img.shields.io/pypi/v/grpc-web-proto-compile.svg
         :target: https://pypi.python.org/pypi/grpc-web-proto-compile
         :alt: PyPI version
 
-.. image:: https://img.shields.io/github/license/romnnn/grpc-web-proto-compile
-        :target: https://github.com/romnnn/grpc-web-proto-compile
+.. image:: https://img.shields.io/github/license/romnn/grpc-web-proto-compile
+        :target: https://github.com/romnn/grpc-web-proto-compile
         :alt: License
 
-.. image:: https://readthedocs.org/projects/grpc-web-proto-compile/badge/?version=latest
-        :target: https://grpc-web-proto-compile.readthedocs.io/en/latest/?badge=latest
-        :alt: Documentation Status
-
-.. image:: https://codecov.io/gh/romnnn/grpc-web-proto-compile/branch/master/graph/badge.svg
-        :target: https://codecov.io/gh/romnnn/grpc-web-proto-compile
+.. image:: https://codecov.io/gh/romnn/grpc-web-proto-compile/branch/master/graph/badge.svg
+        :target: https://codecov.io/gh/romnn/grpc-web-proto-compile
         :alt: Test Coverage
 
 """"""""
@@ -41,13 +37,9 @@ If you cloned the repository, the command looks like:
 
 .. code-block:: console
     
-    $ git clone https://github.com/romnnn/grpc-web-proto-compile
+    $ git clone https://github.com/romnn/grpc-web-proto-compile
     $ cd grpc-web-proto-compile/
     $ python -m grpc_web_proto_compile.cli ./tests/sample/ ./out
-
-See the `official documentation`_ for more information.
-
-.. _official documentation: https://grpc-web-proto-compile.readthedocs.io
 
 Development
 -----------
