@@ -8,7 +8,7 @@ from pathlib import Path
 
 short_description = "No description has been added so far."
 
-1.1.1
+version = "1.1.1"
 
 try:
     if (Path().parent / "README.rst").is_file():
