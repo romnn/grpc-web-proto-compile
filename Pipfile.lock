@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "2943c38ba14ca4d779322c72798e4716cba68b38ef8cdd644e692cc12c590a6b"
+            "sha256": "b79330c4f9e2cb3b797c086bd345679ef0b852b278ae1237e3cc6caca687a24e"
         },
         "pipfile-spec": 6,
         "requires": {},
@@ -316,7 +316,7 @@
                 "sha256:9c2ea1e62d871267b78307fe511c0838ba0da28698c5732d54e2790bf3ba9899",
                 "sha256:e17d6e2b81095c9db0a03a8025a957f334d6ea30b26f9ec70805411e5c7c81f2"
             ],
-            "index": "pypi",
+            "markers": "python_full_version >= '3.6.1' and python_version < '4.0'",
             "version": "==5.9.3"
         },
         "jeepney": {
@@ -694,6 +694,22 @@
             "markers": "sys_platform == 'linux'",
             "version": "==3.3.1"
         },
+        "semantic-version": {
+            "hashes": [
+                "sha256:45e4b32ee9d6d70ba5f440ec8cc5221074c7f4b0e8918bdab748cc37912440a9",
+                "sha256:d2cb2de0558762934679b9a104e82eca7af448c9f4974d1f3eeccff651df8a54"
+            ],
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
+            "version": "==2.8.5"
+        },
+        "setuptools-rust": {
+            "hashes": [
+                "sha256:60c9bf1423a725e472c4a2a6274598251f959f3ed5ffe7698526e78bb431b9b7",
+                "sha256:647009e924f0ae439c7f3e0141a184a69ad247ecb9044c511dabde232d3d570e"
+            ],
+            "index": "pypi",
+            "version": "==0.12.1"
+        },
         "six": {
             "hashes": [
                 "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926",
@@ -761,7 +777,7 @@
                 "sha256:39fb8672126159acb139a7718dd10806104dec1e2f0f6c88aab05d17df10c8d4",
                 "sha256:f57b4c16c62fa2760b7e3d97c35b255512fb6b59a259730f36ba32ce9f8e342f"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4' and python_version < '4'",
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4' and python_version < '4.0'",
             "version": "==1.26.6"
         },
         "virtualenv": {

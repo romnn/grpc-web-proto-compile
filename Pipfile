@@ -24,5 +24,6 @@ m2r = "*"
 twine = "*"
 bump2version = "*"
 pylint = "*"
+setuptools_rust = "*"
 
 [packages]
