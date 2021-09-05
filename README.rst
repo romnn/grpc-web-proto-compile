@@ -20,6 +20,8 @@ grpc-web-proto-compile
 
 """"""""
 
+**NOTE:** This package has been superseded by `romnn/proto-compile <https://github.com/romnn/proto-compile>`_, which provides the same functionality but offers a lot more flexibility and supports more targets than just ``grpc-web``.
+
 This is a small script tailored to be used in CI environments and piplines to completely take care of generating typescript grpc stubs from protobuf files.
 
 .. code-block:: console
