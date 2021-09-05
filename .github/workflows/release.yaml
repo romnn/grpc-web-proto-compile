@@ -16,7 +16,9 @@ jobs:
             - id: query
               uses: romnnn/query-git-action@master
             - name: Update pip
-              run: pip install --upgrade pip
+              run: |
+                pip install --upgrade pip
+                pip --version
             - name: Install pypa/build
               run: >-
                   python -m

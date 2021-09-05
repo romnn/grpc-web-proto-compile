@@ -25,5 +25,7 @@ twine = "*"
 bump2version = "*"
 pylint = "*"
 setuptools_rust = "*"
+setuptools = "*"
+wheel = "*"
 
 [packages]
