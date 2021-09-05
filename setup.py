@@ -23,7 +23,7 @@ try:
 except (ImportError, AssertionError):
     long_description = short_description
 
-requirements = ["Click>=6.0"]
+requirements = ["Click>=6.0", "typed-ast", "dataclasses"]
 test_requirements = [
     "tox",
     "pytest",

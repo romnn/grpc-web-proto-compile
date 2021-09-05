@@ -29,3 +29,5 @@ setuptools = "*"
 wheel = "*"
 
 [packages]
+typed-ast = "*"
+dataclasses = "*"
