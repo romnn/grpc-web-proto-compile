@@ -4,7 +4,6 @@ Tasks for maintaining the project.
 Execute 'invoke --list' for guidance on using Invoke
 """
 import shutil
-from ruamel.yaml import YAML
 import pprint
 
 from invoke import task
@@ -12,7 +11,6 @@ import webbrowser
 from pathlib import Path
 
 Path().expanduser()
-yaml = YAML()
 
 ROOT_DIR = Path(__file__).parent
 SETUP_FILE = ROOT_DIR.joinpath("setup.py")
