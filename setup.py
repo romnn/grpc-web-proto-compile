@@ -35,7 +35,8 @@ test_requirements = [
 ]
 coverage_requirements = ["coverage", "codecov"]
 docs_requirements = ["sphinx>=2.0", "romnn_sphinx_press_theme", "sphinxemoji"]
-formatting_requirements = ["flake8", "black==19.10b0", "isort"]
+formatting_requirements = ["flake8", "black==21.8b0"]
+build_requirements = ["setuptools", "setuptools_rust", "wheel"]
 tool_requirements = [
     "m2r",
     "twine",
@@ -48,6 +49,7 @@ tool_requirements = [
 dev_requirements = (
     requirements
     + test_requirements
+    + build_requirements
     + coverage_requirements
     + docs_requirements
     + formatting_requirements
@@ -72,9 +74,7 @@ setup(
         "Programming Language :: Python :: 3.8",
     ],
     entry_points={
-        "console_scripts": [
-            "grpc_web_proto_compile=grpc_web_proto_compile.cli:main"
-        ]
+        "console_scripts": ["grpc_web_proto_compile=grpc_web_proto_compile.cli:main"]
     },
     python_requires=">=3.6",
     install_requires=requirements,
